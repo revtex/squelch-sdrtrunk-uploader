@@ -31,7 +31,7 @@ shim/                      ← Python file-watch shim
   watch.py
   tests/
 docs/
-  plans/                   ← gitignored local working notes
+  plans/                   ← committed planning docs (build-out plan, etc.)
 .devcontainer/
 .github/
   agents/
@@ -97,15 +97,10 @@ When a request touches both plugin and shim (e.g. "add a new field"), run **Java
 - Do not commit or push unless the user asks.
 - Version-pinning: Gradle dependency catalogs (`libs.versions.toml`) for Java once the dep set grows past 3 entries; `pyproject.toml` for Python.
 
-## Local-only planning docs (`docs/plans/`)
+## Planning docs (`docs/plans/`)
 
-- The entire `docs/plans/` directory is **gitignored**. Files there are local working notes only.
-- Never reference plan filenames or contents in:
-  - `CHANGELOG.md`
-  - committed docs
-  - commit messages
-  - PR titles or descriptions
-  - code comments
+- Planning docs live under `docs/plans/` and are **committed** to the repo so contributors can follow the build-out roadmap.
+- `CHANGELOG.md` bullets still describe **what changed in the product**, not which plan phase shipped — link to the plan only when it adds operator-relevant context.
 
 ## Changelog & Releases
 
