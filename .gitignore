@@ -1,0 +1,29 @@
+# Build artefacts
+**/build/
+**/.gradle/
+**/out/
+**/*.jar
+**/*.class
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+.DS_Store
+
+# Local config
+.env
+*.local
